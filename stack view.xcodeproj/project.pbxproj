@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D508548F22BBBCF200C82723 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508548E22BBBCF200C82723 /* GridView.swift */; };
 		D511F3D722A9857D0020AEAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511F3D622A9857D0020AEAA /* AppDelegate.swift */; };
 		D511F3D922A9857D0020AEAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511F3D822A9857D0020AEAA /* ViewController.swift */; };
 		D511F3DC22A9857E0020AEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511F3DA22A9857E0020AEAA /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D508548E22BBBCF200C82723 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		D511F3D322A9857D0020AEAA /* stack view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stack view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D511F3D622A9857D0020AEAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D511F3D822A9857D0020AEAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				D511F3D622A9857D0020AEAA /* AppDelegate.swift */,
 				D511F3D822A9857D0020AEAA /* ViewController.swift */,
+				D508548E22BBBCF200C82723 /* GridView.swift */,
 				D511F3DA22A9857E0020AEAA /* Main.storyboard */,
 				D511F3DD22A9857E0020AEAA /* Assets.xcassets */,
 				D511F3DF22A9857E0020AEAA /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					D511F3D222A9857D0020AEAA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D511F3D922A9857D0020AEAA /* ViewController.swift in Sources */,
+				D508548F22BBBCF200C82723 /* GridView.swift in Sources */,
 				D511F3D722A9857D0020AEAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.Massi.stack-view";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.Massi.stack-view";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

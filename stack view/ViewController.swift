@@ -11,11 +11,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     
-    
     let imagePick = UIImagePickerController()
     var currentButton: UIButton?
     var imgView = UIImage?.self
 
+    @IBOutlet weak var gridView: UIView!
     
     @IBOutlet weak var butn1: UIButton!
     @IBOutlet weak var Butn2: UIButton!
@@ -66,5 +66,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             Butn3.isHidden = false
             Butn4.isHidden = false
         }
+    }
+    
+    @IBAction func sharing(_sender: Any){
+        
+        let imageShare = [gridView.image]
+        let activityVC = UIActivityViewController(activityItems: imageShare as [Any], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        self.present(activityVC, animated: true, completion: nil)
     }
 }
