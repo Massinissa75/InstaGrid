@@ -14,7 +14,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     let imagePick = UIImagePickerController()
     var currentButton: UIButton?
-    let imgView = UIImage?.self
+    var imgView = UIImage?.self
+
+    
+    @IBOutlet weak var butn1: UIButton!
+    @IBOutlet weak var Butn2: UIButton!
+    @IBOutlet weak var Butn3: UIButton!
+    @IBOutlet weak var Butn4: UIButton!
     
     override func viewDidLoad() {
         
@@ -42,17 +48,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         self.dismiss(animated: true, completion: nil)
     }
-    @IBAction func shareOnlyImage(_ sender: UIButton) {
-        let image = UIImage(named: "")
-        let imageShare = [imagePick]
-        
-        let activityViewController = UIActivityViewController(activityItems: imageShare , applicationActivities: nil)
-         activityViewController.popoverPresentationController?.sourceView = self.view
-            self.present(activityViewController, animated: true, completion: nil)
+    
+    @IBAction func chooseLayout(_sender: UIButton){
+        if (_sender.tag == 0){
+            butn1.isHidden = true
+            Butn2.isHidden = false
+            Butn3.isHidden = false
+            Butn4.isHidden = false
+        } else if (_sender.tag == 1){
+            Butn3.isHidden = true
+            butn1.isHidden = false
+            Butn2.isHidden = false
+            Butn4.isHidden = false
+        }else{
+            butn1.isHidden = false
+            Butn2.isHidden = false
+            Butn3.isHidden = false
+            Butn4.isHidden = false
+        }
+    }
 }
-
-}
-
-
-
-
