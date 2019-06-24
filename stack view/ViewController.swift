@@ -15,6 +15,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var currentButton: UIButton?
     var imgView = UIImage?.self
 
+  
+    @IBOutlet weak var LabelShare: UILabel!
+    @IBOutlet weak var swiping: UISwipeGestureRecognizer!
     @IBOutlet weak var gridView: UIView!
     
     @IBOutlet weak var butn1: UIButton!
@@ -24,7 +27,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         
+        let swape = UISwipeGestureRecognizer(target: self, action: #selector(swipingUp(_:)))
+        
     }
+        
+        
+    @IBAction func swipingUp(_ sender: UISwipeGestureRecognizer) {
+        sharing(_sender: UISwipeGestureRecognizer.self)
+      
+    }
+    
     
     @IBAction func addImageButton(_ sender: UIButton) {
         
@@ -68,11 +80,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    @IBAction func sharing(_sender: Any){
+    func sharing(_sender: Any){
         
         let imageShare = [gridView.image]
         let activityVC = UIActivityViewController(activityItems: imageShare as [Any], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         self.present(activityVC, animated: true, completion: nil)
     }
+ 
 }

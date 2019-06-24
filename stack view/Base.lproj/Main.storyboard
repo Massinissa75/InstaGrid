@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JId-bK-Uet">
-                                <rect key="frame" x="37" y="131" width="301" height="300"/>
+                                <rect key="frame" x="37" y="307" width="301" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-VJ-eWn">
                                         <rect key="frame" x="5" y="5" width="291" height="290"/>
@@ -82,18 +82,20 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.30540218949999998" green="0.57042127850000002" blue="0.72085577249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="hqq-VJ-eWn" secondAttribute="trailing" constant="5" id="5AD-eY-dww"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="PoQ-Md-vtu"/>
                                     <constraint firstAttribute="bottom" secondItem="hqq-VJ-eWn" secondAttribute="bottom" constant="5" id="Q7w-nf-aqw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Rst-pH-jI6"/>
                                     <constraint firstAttribute="width" constant="301" id="iIy-Vq-vOe"/>
                                     <constraint firstItem="hqq-VJ-eWn" firstAttribute="leading" secondItem="JId-bK-Uet" secondAttribute="leading" constant="5" id="nOt-bc-DHi"/>
                                     <constraint firstItem="hqq-VJ-eWn" firstAttribute="top" secondItem="JId-bK-Uet" secondAttribute="top" constant="5" id="nbq-ae-pLL"/>
                                     <constraint firstAttribute="height" constant="300" id="oiv-Ji-4cT"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="74G-pz-F1p">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="74G-pz-F1p">
                                 <rect key="frame" x="0.0" y="650" width="385" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WD-JM-Gd7">
                                         <rect key="frame" x="0.0" y="0.0" width="385" height="128"/>
@@ -131,24 +133,46 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrR-Fg-t9m">
-                                <rect key="frame" x="87.229007633594392" y="516" width="200.00000000000006" height="70.000000000000057"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="27"/>
-                                <state key="normal" title="Share">
-                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAL-4T-X6L">
+                                <rect key="frame" x="67.666666666666686" y="158" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe up to share" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AN-ZD-J4T">
+                                        <rect key="frame" x="38" y="99" width="163" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arrow Up" highlightedImage="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="ytc-qh-5qE">
+                                        <rect key="frame" x="102" y="51" width="30" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="HXw-au-QjU"/>
+                                    <constraint firstAttribute="width" constant="240" id="rLv-df-GRX"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="sharingWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMm-RN-nxC"/>
+                                    <outletCollection property="gestureRecognizers" destination="Goc-au-Mse" appends="YES" id="46E-gJ-DEn"/>
                                 </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.71612447500228882" green="0.84272682666778564" blue="0.89747244119644165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="JId-bK-Uet" secondAttribute="bottom" constant="381" id="60b-jt-Tgi"/>
+                            <constraint firstItem="74G-pz-F1p" firstAttribute="top" secondItem="JId-bK-Uet" secondAttribute="bottom" constant="43" id="EY5-Ee-bHT"/>
+                            <constraint firstItem="74G-pz-F1p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IFC-jR-J1D"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="MfU-bI-vSJ"/>
+                            <constraint firstItem="JId-bK-Uet" firstAttribute="centerX" secondItem="BAL-4T-X6L" secondAttribute="centerX" id="Qjl-7f-L3P"/>
+                            <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="BAL-4T-X6L" secondAttribute="bottom" constant="21" id="QwZ-Uu-SMA"/>
+                            <constraint firstItem="74G-pz-F1p" firstAttribute="top" secondItem="JId-bK-Uet" secondAttribute="bottom" constant="43" id="Wmi-nC-Ku7"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZIv-Hk-5TI"/>
-                            <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="a3i-jw-rAi"/>
+                            <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="BAL-4T-X6L" secondAttribute="bottom" constant="21" id="bMl-rH-9Qp"/>
+                            <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="307" id="bry-2F-iYV"/>
+                            <constraint firstItem="JId-bK-Uet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="erq-NP-UAU"/>
+                            <constraint firstItem="74G-pz-F1p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oi9-cC-rJ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JId-bK-Uet" secondAttribute="trailing" constant="37" id="ov6-wX-PkN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -156,16 +180,23 @@
                         <outlet property="Butn2" destination="cUj-6D-Vxk" id="Eib-Xi-yx5"/>
                         <outlet property="Butn3" destination="fB8-ti-3nQ" id="pQd-X1-faG"/>
                         <outlet property="Butn4" destination="9Xo-y6-A9n" id="oiR-ab-lTj"/>
+                        <outlet property="LabelShare" destination="9AN-ZD-J4T" id="ZQ4-2M-DAE"/>
                         <outlet property="butn1" destination="qeL-c8-pyl" id="Lhr-zz-mfY"/>
                         <outlet property="gridView" destination="JId-bK-Uet" id="g7b-Tw-2GF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="Goc-au-Mse">
+                    <connections>
+                        <action selector="swipingUp:" destination="BYZ-38-t0r" id="Ohj-LJ-ObP"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Arrow Up" width="4.6666665077209473" height="3.3333332538604736"/>
         <image name="Layout 1" width="26.666666030883789" height="26.666666030883789"/>
         <image name="Layout 2" width="26.666666030883789" height="26.666666030883789"/>
         <image name="Layout 3" width="26.666666030883789" height="26.666666030883789"/>
