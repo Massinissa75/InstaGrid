@@ -85,17 +85,15 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="hqq-VJ-eWn" secondAttribute="trailing" constant="5" id="5AD-eY-dww"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="PoQ-Md-vtu"/>
+                                    <constraint firstAttribute="width" secondItem="JId-bK-Uet" secondAttribute="height" multiplier="301:300" id="8BM-67-yza"/>
+                                    <constraint firstAttribute="width" constant="301" id="HaS-Sq-SIr"/>
                                     <constraint firstAttribute="bottom" secondItem="hqq-VJ-eWn" secondAttribute="bottom" constant="5" id="Q7w-nf-aqw"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Rst-pH-jI6"/>
-                                    <constraint firstAttribute="width" constant="301" id="iIy-Vq-vOe"/>
                                     <constraint firstItem="hqq-VJ-eWn" firstAttribute="leading" secondItem="JId-bK-Uet" secondAttribute="leading" constant="5" id="nOt-bc-DHi"/>
                                     <constraint firstItem="hqq-VJ-eWn" firstAttribute="top" secondItem="JId-bK-Uet" secondAttribute="top" constant="5" id="nbq-ae-pLL"/>
-                                    <constraint firstAttribute="height" constant="300" id="oiv-Ji-4cT"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="74G-pz-F1p">
-                                <rect key="frame" x="0.0" y="650" width="385" height="128"/>
+                                <rect key="frame" x="-5" y="650" width="385" height="128"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WD-JM-Gd7">
                                         <rect key="frame" x="0.0" y="0.0" width="385" height="128"/>
@@ -132,6 +130,10 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="74G-pz-F1p" secondAttribute="height" multiplier="385:128" id="OqR-Zl-mTk"/>
+                                    <constraint firstAttribute="width" constant="385" id="QE8-ii-Lsz"/>
+                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAL-4T-X6L">
                                 <rect key="frame" x="67.666666666666686" y="158" width="240" height="128"/>
@@ -161,18 +163,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.71612447500228882" green="0.84272682666778564" blue="0.89747244119644165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="74G-pz-F1p" firstAttribute="top" secondItem="JId-bK-Uet" secondAttribute="bottom" constant="43" id="CSd-rL-8HO"/>
                             <constraint firstItem="74G-pz-F1p" firstAttribute="top" secondItem="JId-bK-Uet" secondAttribute="bottom" constant="43" id="EY5-Ee-bHT"/>
-                            <constraint firstItem="74G-pz-F1p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IFC-jR-J1D"/>
+                            <constraint firstItem="74G-pz-F1p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H0i-Sp-Nnx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JId-bK-Uet" secondAttribute="trailing" constant="37" id="Hbb-yc-Ut4"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="MfU-bI-vSJ"/>
+                            <constraint firstItem="74G-pz-F1p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OiR-VB-SFr"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="centerX" secondItem="BAL-4T-X6L" secondAttribute="centerX" id="Qjl-7f-L3P"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="BAL-4T-X6L" secondAttribute="bottom" constant="21" id="QwZ-Uu-SMA"/>
+                            <constraint firstItem="JId-bK-Uet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="T43-Jk-DnL"/>
                             <constraint firstItem="74G-pz-F1p" firstAttribute="top" secondItem="JId-bK-Uet" secondAttribute="bottom" constant="43" id="Wmi-nC-Ku7"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZIv-Hk-5TI"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="BAL-4T-X6L" secondAttribute="bottom" constant="21" id="bMl-rH-9Qp"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="307" id="bry-2F-iYV"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="erq-NP-UAU"/>
-                            <constraint firstItem="74G-pz-F1p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oi9-cC-rJ3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JId-bK-Uet" secondAttribute="trailing" constant="37" id="ov6-wX-PkN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
