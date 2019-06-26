@@ -98,10 +98,18 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WD-JM-Gd7">
                                         <rect key="frame" x="0.0" y="0.0" width="385" height="128"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRC-AM-7FN">
+                                                <rect key="frame" x="37" y="21" width="85" height="85"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="Selected" backgroundImage="Layout 1"/>
+                                                <connections>
+                                                    <action selector="chooseLayoutWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BcZ-hn-OIo"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrz-8c-wIf">
                                                 <rect key="frame" x="147" y="22" width="85" height="85"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="Layout 2"/>
+                                                <state key="normal" image="Selected" backgroundImage="Layout 2"/>
                                                 <connections>
                                                     <action selector="chooseLayoutWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPM-od-zDW"/>
                                                 </connections>
@@ -109,17 +117,9 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oO6-6d-y3j">
                                                 <rect key="frame" x="258" y="22" width="85" height="85"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="Layout 3"/>
+                                                <state key="normal" image="Selected" backgroundImage="Layout 3"/>
                                                 <connections>
                                                     <action selector="chooseLayoutWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bF-Ce-3Js"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRC-AM-7FN">
-                                                <rect key="frame" x="37" y="21" width="85" height="85"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="Layout 1"/>
-                                                <connections>
-                                                    <action selector="chooseLayoutWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BcZ-hn-OIo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -187,6 +187,9 @@
                         <outlet property="LabelShare" destination="9AN-ZD-J4T" id="ZQ4-2M-DAE"/>
                         <outlet property="butn1" destination="qeL-c8-pyl" id="Lhr-zz-mfY"/>
                         <outlet property="gridView" destination="JId-bK-Uet" id="g7b-Tw-2GF"/>
+                        <outlet property="layout1" destination="rRC-AM-7FN" id="0KT-Ld-xDU"/>
+                        <outlet property="layout2" destination="hrz-8c-wIf" id="Znf-Ay-dUh"/>
+                        <outlet property="layout3" destination="oO6-6d-y3j" id="Tyu-Cl-Vqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -204,5 +207,6 @@
         <image name="Layout 1" width="26.666666030883789" height="26.666666030883789"/>
         <image name="Layout 2" width="26.666666030883789" height="26.666666030883789"/>
         <image name="Layout 3" width="26.666666030883789" height="26.666666030883789"/>
+        <image name="Selected" width="26.666666030883789" height="26.666666030883789"/>
     </resources>
 </document>

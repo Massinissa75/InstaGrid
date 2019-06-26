@@ -16,8 +16,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var imgView = UIImage?.self
 
   
+    @IBOutlet weak var layout1: UIButton!
+    @IBOutlet weak var layout2: UIButton!
+    @IBOutlet weak var layout3: UIButton!
+    
+    
+    
+    
     @IBOutlet weak var LabelShare: UILabel!
-    @IBOutlet weak var swiping: UISwipeGestureRecognizer!
+    
     @IBOutlet weak var gridView: UIView!
     
     @IBOutlet weak var butn1: UIButton!
@@ -27,7 +34,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         
-        let swape = UISwipeGestureRecognizer(target: self, action: #selector(swipingUp(_:)))
+        _ = UISwipeGestureRecognizer(target: self, action: #selector(swipingUp(_:)))
         
     }
         
@@ -67,16 +74,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             Butn2.isHidden = false
             Butn3.isHidden = false
             Butn4.isHidden = false
+            
+            layout1.imageView?.isHidden = false
+            layout2.imageView?.isHidden = true
+            layout3.imageView?.isHidden = true
+            
         } else if (_sender.tag == 1){
             Butn3.isHidden = true
             butn1.isHidden = false
             Butn2.isHidden = false
             Butn4.isHidden = false
+            
+            layout1.imageView?.isHidden = true
+            layout2.imageView?.isHidden = false
+            layout3.imageView?.isHidden = true
+            
         }else{
             butn1.isHidden = false
             Butn2.isHidden = false
             Butn3.isHidden = false
             Butn4.isHidden = false
+            
+            layout1.imageView?.isHidden = true
+            layout2.imageView?.isHidden = true
+            layout3.imageView?.isHidden = false
         }
     }
     
