@@ -20,9 +20,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var layout2: UIButton!
     @IBOutlet weak var layout3: UIButton!
     
-    
-    
-    
     @IBOutlet weak var LabelShare: UILabel!
     
     @IBOutlet weak var gridView: UIView!
