@@ -15,7 +15,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var currentButton: UIButton?
     var imgView = UIImage?.self
 
-  
+    // Differents outlets
+    
     @IBOutlet weak var arrowIcon: UIImageView!
     @IBOutlet weak var layout1: UIButton!
     @IBOutlet weak var layout2: UIButton!
@@ -30,12 +31,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var Butn3: UIButton!
     @IBOutlet weak var Butn4: UIButton!
     
+    
+    
+    
     override func viewDidLoad() {
         
-        layout1.imageView?.isHidden = true
-        layout2.imageView?.isHidden = true
-        layout3.imageView?.isHidden = false
-        
+        setLayout(layout: 2)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -49,20 +50,34 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
         
+    // Sharing function
+    
+    func sharing(_sender: Any){
         
+        let imageShare = [gridView.image]
+        let activityVC = UIActivityViewController(activityItems: imageShare as [Any], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
+    //Swipe up to share
+    
     @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
         if UIDevice.current.orientation.isPortrait{
         sharing(_sender: UISwipeGestureRecognizer.self)
         }
-      
     }
+    
+    //Swipe left to share
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
         if UIDevice.current.orientation.isLandscape{
         sharing(_sender: UISwipeGestureRecognizer.self)
         }
-        
     }
+    
+    
+    //Select and add an image from library
     
     
     @IBAction func addImageButton(_ sender: UIButton) {
@@ -88,8 +103,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.dismiss(animated: true, completion: nil)
     }
     
+    //Select layout function
+    
     @IBAction func chooseLayout(_sender: UIButton){
-        if (_sender.tag == 0){
+        
+        setLayout(layout: _sender.tag)
+    }
+    func setLayout(layout: Int){
+        
+        if (layout == 0){
             butn1.isHidden = true
             Butn2.isHidden = false
             Butn3.isHidden = false
@@ -99,7 +121,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             layout2.imageView?.isHidden = true
             layout3.imageView?.isHidden = true
             
-        } else if (_sender.tag == 1){
+        } else if (layout == 1){
             Butn3.isHidden = true
             butn1.isHidden = false
             Butn2.isHidden = false
@@ -120,13 +142,4 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             layout3.imageView?.isHidden = false
         }
     }
-    
-    func sharing(_sender: Any){
-        
-        let imageShare = [gridView.image]
-        let activityVC = UIActivityViewController(activityItems: imageShare as [Any], applicationActivities: nil)
-        activityVC.popoverPresentationController?.sourceView = self.view
-        self.present(activityVC, animated: true, completion: nil)
-    }
- 
 }
