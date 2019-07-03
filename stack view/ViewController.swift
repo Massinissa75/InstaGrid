@@ -16,6 +16,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var imgView = UIImage?.self
 
   
+    @IBOutlet weak var arrowIcon: UIImageView!
     @IBOutlet weak var layout1: UIButton!
     @IBOutlet weak var layout2: UIButton!
     @IBOutlet weak var layout3: UIButton!
@@ -31,14 +32,36 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         
-        _ = UISwipeGestureRecognizer(target: self, action: #selector(swipingUp(_:)))
+        layout1.imageView?.isHidden = true
+        layout2.imageView?.isHidden = true
+        layout3.imageView?.isHidden = false
         
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        if UIDevice.current.orientation.isLandscape {
+            LabelShare.text = "Swipe left to share"
+            arrowIcon.image = UIImage(named: "Arrow Left")
+        } else {
+            LabelShare.text = "Swipe up to share"
+            arrowIcon.image = UIImage(named: "Arrow Up")
+        }
     }
         
         
-    @IBAction func swipingUp(_ sender: UISwipeGestureRecognizer) {
+    @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
+        if UIDevice.current.orientation.isPortrait{
         sharing(_sender: UISwipeGestureRecognizer.self)
+        }
       
+    }
+    
+    @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        if UIDevice.current.orientation.isLandscape{
+        sharing(_sender: UISwipeGestureRecognizer.self)
+        }
+        
     }
     
     
