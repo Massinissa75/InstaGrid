@@ -35,7 +35,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<string>Need Gallery acces</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
@@ -44,6 +44,11 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+		<string>Delm-Medium.otf</string>
 	</array>
 </dict>
 </plist>

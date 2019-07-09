@@ -13,6 +13,7 @@
 		D511F3DC22A9857E0020AEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511F3DA22A9857E0020AEAA /* Main.storyboard */; };
 		D511F3DE22A9857E0020AEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D511F3DD22A9857E0020AEAA /* Assets.xcassets */; };
 		D511F3E122A9857E0020AEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511F3DF22A9857E0020AEAA /* LaunchScreen.storyboard */; };
+		D571815B22CE5E28000288BD /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D571815A22CE5E28000288BD /* Delm-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D511F3DD22A9857E0020AEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D511F3E022A9857E0020AEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D511F3E222A9857E0020AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D571815A22CE5E28000288BD /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		D511F3D522A9857D0020AEAA /* stack view */ = {
 			isa = PBXGroup;
 			children = (
-				D511F3D622A9857D0020AEAA /* AppDelegate.swift */,
-				D511F3D822A9857D0020AEAA /* ViewController.swift */,
-				D508548E22BBBCF200C82723 /* GridView.swift */,
-				D511F3DA22A9857E0020AEAA /* Main.storyboard */,
-				D511F3DD22A9857E0020AEAA /* Assets.xcassets */,
-				D511F3DF22A9857E0020AEAA /* LaunchScreen.storyboard */,
-				D511F3E222A9857E0020AEAA /* Info.plist */,
+				D571816022CE609F000288BD /* Supporting Files */,
+				D571815F22CE608A000288BD /* Model */,
+				D571815E22CE607C000288BD /* View */,
+				D571815C22CE602B000288BD /* Controller */,
 			);
 			path = "stack view";
+			sourceTree = "<group>";
+		};
+		D571815C22CE602B000288BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D511F3D822A9857D0020AEAA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D571815E22CE607C000288BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D511F3DA22A9857E0020AEAA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D571815F22CE608A000288BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D508548E22BBBCF200C82723 /* GridView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D571816022CE609F000288BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D511F3D622A9857D0020AEAA /* AppDelegate.swift */,
+				D511F3DD22A9857E0020AEAA /* Assets.xcassets */,
+				D511F3DF22A9857E0020AEAA /* LaunchScreen.storyboard */,
+				D571815A22CE5E28000288BD /* Delm-Medium.otf */,
+				D511F3E222A9857E0020AEAA /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +163,7 @@
 			files = (
 				D511F3E122A9857E0020AEAA /* LaunchScreen.storyboard in Resources */,
 				D511F3DE22A9857E0020AEAA /* Assets.xcassets in Resources */,
+				D571815B22CE5E28000288BD /* Delm-Medium.otf in Resources */,
 				D511F3DC22A9857E0020AEAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +325,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P28Y39GE6C;
-				INFOPLIST_FILE = "stack view/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/stack view/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P28Y39GE6C;
-				INFOPLIST_FILE = "stack view/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/stack view/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
