@@ -117,9 +117,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             Butn3.isHidden = false
             Butn4.isHidden = false
             
-            layout1.imageView?.isHidden = false
-            layout2.imageView?.isHidden = true
-            layout3.imageView?.isHidden = true
+            layout1.setImage(UIImage(named: "Selected"), for: .normal)
+            layout2.setImage(nil, for: .normal)
+            layout3.setImage(nil, for: .normal)
             
         } else if (layout == 1){
             Butn3.isHidden = true
@@ -127,9 +127,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             Butn2.isHidden = false
             Butn4.isHidden = false
             
-            layout1.imageView?.isHidden = true
-            layout2.imageView?.isHidden = false
-            layout3.imageView?.isHidden = true
+            layout2.setImage(UIImage(named: "Selected"), for: .normal)
+            layout1.setImage(nil, for: .normal)
+            layout3.setImage(nil, for: .normal)
             
         }else{
             butn1.isHidden = false
@@ -137,9 +137,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             Butn3.isHidden = false
             Butn4.isHidden = false
             
-            layout1.imageView?.isHidden = true
-            layout2.imageView?.isHidden = true
-            layout3.imageView?.isHidden = false
+            layout3.setImage(UIImage(named: "Selected"), for: .normal)
+            layout2.setImage(nil, for: .normal)
+            layout1.setImage(nil, for: .normal)
         }
     }
 }
