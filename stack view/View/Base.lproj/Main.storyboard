@@ -111,6 +111,10 @@
                                         <exclude reference="p2u-u9-qgB"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zsM-JF-liN" appends="YES" id="HIr-oS-MTQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="Goc-au-Mse" appends="YES" id="3iv-n6-BpO"/>
+                                </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="74G-pz-F1p">
                                 <rect key="frame" x="37.666666666666657" y="679" width="300" height="80"/>
@@ -193,19 +197,19 @@
                                     <constraint firstItem="ytc-qh-5qE" firstAttribute="centerX" secondItem="ELK-8h-BDq" secondAttribute="centerX" id="iDD-fn-Vj7"/>
                                     <constraint firstItem="9AN-ZD-J4T" firstAttribute="leading" secondItem="ELK-8h-BDq" secondAttribute="leading" constant="5" id="vdJ-dY-Rss"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Goc-au-Mse" appends="YES" id="BBx-gN-pkk"/>
-                                    <outletCollection property="gestureRecognizers" destination="zsM-JF-liN" appends="YES" id="dwO-Qu-2FT"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.71612447500228882" green="0.84272682666778564" blue="0.89747244119644165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ELK-8h-BDq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="8IA-1w-9dJ"/>
+                            <constraint firstItem="Giw-0i-olY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="350" id="KzY-DB-5FZ"/>
                             <constraint firstItem="Giw-0i-olY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="LYv-tA-Acp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Giw-0i-olY" secondAttribute="trailing" constant="220" id="Muc-Le-Ube"/>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="ELK-8h-BDq" secondAttribute="bottom" constant="20" id="Nkn-6U-ank"/>
                             <constraint firstItem="ELK-8h-BDq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="P5G-1n-7aL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Giw-0i-olY" secondAttribute="trailing" constant="250" id="QTm-Pb-SHu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Giw-0i-olY" secondAttribute="trailing" constant="250" id="QTm-Pb-SHu">
+                                <variation key="heightClass=compact" constant="240"/>
+                            </constraint>
                             <constraint firstItem="ELK-8h-BDq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="RIO-8h-Ko6"/>
                             <constraint firstItem="Giw-0i-olY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="S8a-jf-ibD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ELK-8h-BDq" secondAttribute="trailing" constant="30" id="SBE-Zh-yqk"/>
@@ -221,7 +225,7 @@
                             <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="cuk-9K-vVr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="74G-pz-F1p" secondAttribute="bottom" constant="19" id="hep-95-sfm"/>
                             <constraint firstItem="Giw-0i-olY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="370" id="i2x-PS-TOZ">
-                                <variation key="heightClass=compact" constant="360"/>
+                                <variation key="heightClass=compact" constant="370"/>
                             </constraint>
                             <constraint firstItem="JId-bK-Uet" firstAttribute="top" secondItem="Giw-0i-olY" secondAttribute="bottom" constant="8" id="mPw-Ea-5H2"/>
                             <constraint firstItem="Giw-0i-olY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="rsc-kE-chV"/>
@@ -236,11 +240,13 @@
                                 <exclude reference="WSX-Tq-1P0"/>
                                 <exclude reference="ZXm-c0-YLU"/>
                                 <exclude reference="P5G-1n-7aL"/>
+                                <exclude reference="KzY-DB-5FZ"/>
+                                <exclude reference="LYv-tA-Acp"/>
+                                <exclude reference="Muc-Le-Ube"/>
+                                <exclude reference="i2x-PS-TOZ"/>
                                 <exclude reference="cuk-9K-vVr"/>
                                 <exclude reference="mPw-Ea-5H2"/>
                                 <exclude reference="vFY-iv-qDy"/>
-                                <exclude reference="LYv-tA-Acp"/>
-                                <exclude reference="i2x-PS-TOZ"/>
                                 <exclude reference="YHM-9T-aix"/>
                                 <exclude reference="b5P-Zn-Ocn"/>
                             </mask>
@@ -255,6 +261,12 @@
                                 <exclude reference="uby-e4-Da4"/>
                                 <exclude reference="8IA-1w-9dJ"/>
                                 <include reference="P5G-1n-7aL"/>
+                                <include reference="KzY-DB-5FZ"/>
+                                <include reference="LYv-tA-Acp"/>
+                                <include reference="Muc-Le-Ube"/>
+                                <exclude reference="S8a-jf-ibD"/>
+                                <include reference="i2x-PS-TOZ"/>
+                                <exclude reference="rsc-kE-chV"/>
                                 <exclude reference="Nkn-6U-ank"/>
                                 <exclude reference="VWM-ws-yRl"/>
                                 <exclude reference="Z3M-ig-P3y"/>
@@ -262,10 +274,6 @@
                                 <include reference="cuk-9K-vVr"/>
                                 <include reference="mPw-Ea-5H2"/>
                                 <include reference="vFY-iv-qDy"/>
-                                <include reference="LYv-tA-Acp"/>
-                                <exclude reference="S8a-jf-ibD"/>
-                                <include reference="i2x-PS-TOZ"/>
-                                <exclude reference="rsc-kE-chV"/>
                                 <include reference="YHM-9T-aix"/>
                                 <include reference="b5P-Zn-Ocn"/>
                                 <exclude reference="zT0-8Z-zK9"/>
@@ -286,14 +294,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="Goc-au-Mse">
-                    <connections>
-                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="T0N-4k-GYi"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="zsM-JF-liN">
                     <connections>
                         <action selector="swipeLeft:" destination="BYZ-38-t0r" id="XUu-9t-8cm"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="Goc-au-Mse">
+                    <connections>
+                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="T0N-4k-GYi"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

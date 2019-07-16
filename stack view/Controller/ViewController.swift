@@ -79,7 +79,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     //Select and add an image from library
     
-    
     @IBAction func addImageButton(_ sender: UIButton) {
         
         currentButton = sender
