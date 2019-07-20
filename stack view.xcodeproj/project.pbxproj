@@ -14,6 +14,7 @@
 		D511F3DE22A9857E0020AEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D511F3DD22A9857E0020AEAA /* Assets.xcassets */; };
 		D511F3E122A9857E0020AEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511F3DF22A9857E0020AEAA /* LaunchScreen.storyboard */; };
 		D571815B22CE5E28000288BD /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D571815A22CE5E28000288BD /* Delm-Medium.otf */; };
+		D5ED58E422DE3DA9006D0FAA /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5ED58E322DE3DA9006D0FAA /* ThirstySoftRegular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D511F3E022A9857E0020AEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D511F3E222A9857E0020AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D571815A22CE5E28000288BD /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
+		D5ED58E322DE3DA9006D0FAA /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		D571815E22CE607C000288BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D508548E22BBBCF200C82723 /* GridView.swift */,
 				D511F3DA22A9857E0020AEAA /* Main.storyboard */,
 			);
 			path = View;
@@ -85,7 +88,6 @@
 		D571815F22CE608A000288BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D508548E22BBBCF200C82723 /* GridView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +99,7 @@
 				D511F3DD22A9857E0020AEAA /* Assets.xcassets */,
 				D511F3DF22A9857E0020AEAA /* LaunchScreen.storyboard */,
 				D571815A22CE5E28000288BD /* Delm-Medium.otf */,
+				D5ED58E322DE3DA9006D0FAA /* ThirstySoftRegular.otf */,
 				D511F3E222A9857E0020AEAA /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -163,6 +166,7 @@
 			files = (
 				D511F3E122A9857E0020AEAA /* LaunchScreen.storyboard in Resources */,
 				D511F3DE22A9857E0020AEAA /* Assets.xcassets in Resources */,
+				D5ED58E422DE3DA9006D0FAA /* ThirstySoftRegular.otf in Resources */,
 				D571815B22CE5E28000288BD /* Delm-Medium.otf in Resources */,
 				D511F3DC22A9857E0020AEAA /* Main.storyboard in Resources */,
 			);
@@ -254,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -309,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
