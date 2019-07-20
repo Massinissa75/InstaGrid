@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		D508548E22BBBCF200C82723 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		D511F3D322A9857D0020AEAA /* stack view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stack view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D511F3D322A9857D0020AEAA /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D511F3D622A9857D0020AEAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D511F3D822A9857D0020AEAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D511F3DB22A9857E0020AEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		D511F3CA22A9857D0020AEAA = {
 			isa = PBXGroup;
 			children = (
-				D511F3D522A9857D0020AEAA /* stack view */,
+				D511F3D522A9857D0020AEAA /* Instagrid */,
 				D511F3D422A9857D0020AEAA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		D511F3D422A9857D0020AEAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D511F3D322A9857D0020AEAA /* stack view.app */,
+				D511F3D322A9857D0020AEAA /* Instagrid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D511F3D522A9857D0020AEAA /* stack view */ = {
+		D511F3D522A9857D0020AEAA /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
 				D571816022CE609F000288BD /* Supporting Files */,
@@ -65,7 +65,7 @@
 				D571815E22CE607C000288BD /* View */,
 				D571815C22CE602B000288BD /* Controller */,
 			);
-			path = "stack view";
+			path = Instagrid;
 			sourceTree = "<group>";
 		};
 		D571815C22CE602B000288BD /* Controller */ = {
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D511F3D222A9857D0020AEAA /* stack view */ = {
+		D511F3D222A9857D0020AEAA /* Instagrid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D511F3E522A9857E0020AEAA /* Build configuration list for PBXNativeTarget "stack view" */;
+			buildConfigurationList = D511F3E522A9857E0020AEAA /* Build configuration list for PBXNativeTarget "Instagrid" */;
 			buildPhases = (
 				D511F3CF22A9857D0020AEAA /* Sources */,
 				D511F3D022A9857D0020AEAA /* Frameworks */,
@@ -120,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = "stack view";
+			name = Instagrid;
 			productName = "stack view";
-			productReference = D511F3D322A9857D0020AEAA /* stack view.app */;
+			productReference = D511F3D322A9857D0020AEAA /* Instagrid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D511F3CE22A9857D0020AEAA /* Build configuration list for PBXProject "stack view" */;
+			buildConfigurationList = D511F3CE22A9857D0020AEAA /* Build configuration list for PBXProject "Instagrid" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D511F3D222A9857D0020AEAA /* stack view */,
+				D511F3D222A9857D0020AEAA /* Instagrid */,
 			);
 		};
 /* End PBXProject section */
@@ -329,12 +329,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P28Y39GE6C;
-				INFOPLIST_FILE = "$(SRCROOT)/stack view/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Instagrid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.Massi.stack-view";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.Massi.Instagrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,12 +347,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P28Y39GE6C;
-				INFOPLIST_FILE = "$(SRCROOT)/stack view/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Instagrid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.Massi.stack-view";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.Massi.Instagrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D511F3CE22A9857D0020AEAA /* Build configuration list for PBXProject "stack view" */ = {
+		D511F3CE22A9857D0020AEAA /* Build configuration list for PBXProject "Instagrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D511F3E322A9857E0020AEAA /* Debug */,
@@ -371,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D511F3E522A9857E0020AEAA /* Build configuration list for PBXNativeTarget "stack view" */ = {
+		D511F3E522A9857E0020AEAA /* Build configuration list for PBXNativeTarget "Instagrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D511F3E622A9857E0020AEAA /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:stack view.xcodeproj">
+      location = "self:/Users/Massinissa_theking/Desktop/stackgrid/stack-view/Instagrid.xcodeproj">
    </FileRef>
 </Workspace>
