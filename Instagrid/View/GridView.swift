@@ -14,3 +14,4 @@ extension UIView {
         return renderer.image { rendererContext in layer.render(in: rendererContext.cgContext) }
     }
 }
+
