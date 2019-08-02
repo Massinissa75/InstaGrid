@@ -44,9 +44,9 @@
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeL-c8-pyl">
                                                         <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="139.33333333333334"/>
                                                         <color key="backgroundColor" red="0.94109410047531128" green="0.94122928380966187" blue="0.94106453657150269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal" title="+">
-                                                            <color key="titleColor" red="0.30942925809999999" green="0.57041275499999999" blue="0.72083908320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.63527649641036987" green="0.63139075040817261" blue="0.63124769926071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="addImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g31-8m-nZR"/>
@@ -55,9 +55,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUj-6D-Vxk">
                                                         <rect key="frame" x="151.66666666666663" y="0.0" width="139.33333333333337" height="139.33333333333334"/>
                                                         <color key="backgroundColor" red="0.94109410047531128" green="0.94122928380966187" blue="0.94106453657150269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal" title="+">
-                                                            <color key="titleColor" red="0.30942925809999999" green="0.57041275499999999" blue="0.72083908320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.63527649641036987" green="0.63139075040817261" blue="0.63124769926071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="addImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqx-ee-10I"/>
@@ -71,9 +71,9 @@
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB8-ti-3nQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="139.66666666666666"/>
                                                         <color key="backgroundColor" red="0.94109410047531128" green="0.94122928380966187" blue="0.94106453657150269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal" title="+">
-                                                            <color key="titleColor" red="0.30942925809999999" green="0.57041275499999999" blue="0.72083908320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.63527649641036987" green="0.63139075040817261" blue="0.63124769926071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="addImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMl-i3-V7R"/>
@@ -82,9 +82,9 @@
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xo-y6-A9n">
                                                         <rect key="frame" x="151.66666666666663" y="0.0" width="139.33333333333337" height="139.66666666666666"/>
                                                         <color key="backgroundColor" red="0.94109410047531128" green="0.94122928380966187" blue="0.94106453657150269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal" title="+">
-                                                            <color key="titleColor" red="0.30942925809999999" green="0.57041275499999999" blue="0.72083908320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.63527649641036987" green="0.63139075040817261" blue="0.63124769926071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="addImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHH-Yr-CSb"/>
@@ -157,7 +157,7 @@
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="74G-pz-F1p">
-                                <rect key="frame" x="37.666666666666629" y="679" width="300" height="80"/>
+                                <rect key="frame" x="37.666666666666657" y="679" width="300" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRC-AM-7FN">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -385,10 +385,10 @@
                                 <exclude reference="oky-gZ-4g6"/>
                                 <exclude reference="sMA-LZ-AtK"/>
                                 <exclude reference="P5G-1n-7aL"/>
-                                <exclude reference="vFY-iv-qDy"/>
-                                <exclude reference="zKY-6p-I8m"/>
                                 <exclude reference="kcX-B2-2oG"/>
                                 <exclude reference="ubJ-2k-lHU"/>
+                                <exclude reference="vFY-iv-qDy"/>
+                                <exclude reference="zKY-6p-I8m"/>
                                 <exclude reference="EdT-jJ-Yc5"/>
                                 <exclude reference="NSE-01-Nz2"/>
                                 <exclude reference="YHM-9T-aix"/>
@@ -413,15 +413,15 @@
                                 <exclude reference="8IA-1w-9dJ"/>
                                 <include reference="P5G-1n-7aL"/>
                                 <exclude reference="jfE-Zo-fMr"/>
+                                <exclude reference="MP9-7Z-rSB"/>
+                                <include reference="kcX-B2-2oG"/>
+                                <include reference="ubJ-2k-lHU"/>
                                 <exclude reference="Nkn-6U-ank"/>
                                 <exclude reference="VWM-ws-yRl"/>
                                 <exclude reference="Z3M-ig-P3y"/>
                                 <exclude reference="aac-DO-GNZ"/>
                                 <include reference="vFY-iv-qDy"/>
                                 <include reference="zKY-6p-I8m"/>
-                                <exclude reference="MP9-7Z-rSB"/>
-                                <include reference="kcX-B2-2oG"/>
-                                <include reference="ubJ-2k-lHU"/>
                                 <exclude reference="EdT-jJ-Yc5"/>
                                 <exclude reference="NSE-01-Nz2"/>
                                 <include reference="YHM-9T-aix"/>
@@ -456,14 +456,14 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="Butn2" destination="cUj-6D-Vxk" id="Eib-Xi-yx5"/>
-                        <outlet property="Butn3" destination="fB8-ti-3nQ" id="pQd-X1-faG"/>
-                        <outlet property="Butn4" destination="9Xo-y6-A9n" id="oiR-ab-lTj"/>
                         <outlet property="GridView" destination="JId-bK-Uet" id="KCR-dI-BOh"/>
-                        <outlet property="LabelShare" destination="9AN-ZD-J4T" id="ZQ4-2M-DAE"/>
                         <outlet property="arrowIcon" destination="ytc-qh-5qE" id="nSO-sU-GPh"/>
                         <outlet property="butn1" destination="qeL-c8-pyl" id="Lhr-zz-mfY"/>
+                        <outlet property="butn2" destination="cUj-6D-Vxk" id="Eib-Xi-yx5"/>
+                        <outlet property="butn3" destination="fB8-ti-3nQ" id="pQd-X1-faG"/>
+                        <outlet property="butn4" destination="9Xo-y6-A9n" id="oiR-ab-lTj"/>
                         <outlet property="gridView" destination="JId-bK-Uet" id="g7b-Tw-2GF"/>
+                        <outlet property="labelShare" destination="9AN-ZD-J4T" id="ZQ4-2M-DAE"/>
                         <outlet property="layout1" destination="rRC-AM-7FN" id="0KT-Ld-xDU"/>
                         <outlet property="layout2" destination="hrz-8c-wIf" id="Znf-Ay-dUh"/>
                         <outlet property="layout3" destination="oO6-6d-y3j" id="Tyu-Cl-Vqr"/>
@@ -472,12 +472,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="zsM-JF-liN">
                     <connections>
-                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="AiK-XV-dhX"/>
+                        <action selector="swipeToShare:" destination="BYZ-38-t0r" id="huy-Bd-Wgc"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="Goc-au-Mse">
                     <connections>
-                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="T0N-4k-GYi"/>
+                        <action selector="swipeToShare:" destination="BYZ-38-t0r" id="rYc-tO-Six"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
