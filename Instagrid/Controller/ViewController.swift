@@ -32,22 +32,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
   
     var currentLayout: Int = 2
 
-  
-// viewDidload
-  
-    override func viewDidLoad() {
+  //ViewDidLoad
+  override func viewDidLoad() {
         self.currentLayout = 2
         setLayout(layout: 2)
-    }
-  
-  
-  //Select layout function
+  }
   
   @IBAction func chooseLayout(_sender: UIButton) {
     
     setLayout(layout: _sender.tag)
   }
-  
+  /// SetLayout function
   private func setLayout(layout: Int) {
     self.currentLayout = layout
     if (layout == 0) {
@@ -82,8 +77,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
   }
   
-  //Select and add an image from library
-  
+  ///Select and add an image from library
   @IBAction func addImageButton(_ sender: UIButton) {
     
     currentButton = sender
@@ -106,31 +100,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     self.dismiss(animated: true, completion: nil)
   }
-
-  //Swipe to share
   
+  /// Device orientation & message share
+  override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransition(to: size, with: coordinator)
+    if UIDevice.current.orientation.isLandscape {
+      labelShare.text = "Swipe left to share"
+      arrowIcon.image = UIImage(named: "Arrow Left")
+    } else {
+      labelShare.text = "Swipe up to share"
+      arrowIcon.image = UIImage(named: "Arrow Up")
+    }
+  }
+  
+  //Swipe to share
   @IBAction func swipeToShare(_ sender: UISwipeGestureRecognizer) {
     if (UIDevice.current.orientation.isPortrait && sender.direction == .up) || (UIDevice.current.orientation.isLandscape && sender.direction == . left)
     {
       sharing(_sender: UISwipeGestureRecognizer.self)
     }
   }
-  
-// Device orientation & message share
-  
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        if UIDevice.current.orientation.isLandscape {
-            labelShare.text = "Swipe left to share"
-            arrowIcon.image = UIImage(named: "Arrow Left")
-        } else {
-            labelShare.text = "Swipe up to share"
-            arrowIcon.image = UIImage(named: "Arrow Up")
-        }
-    }
-  
-// Sharing function
-
+  /// Sharing function
   private func sharing(_sender: Any) {
      if self.isAllImageSet() {
         let imageShare = [gridView.image]
@@ -139,9 +129,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.present(activityVC, animated: true, completion: nil)
     }
   }
-
-//Check if layout's all images are set
-  
+  /// Check if layout's all images are set
   private func checkLayoutIsOk () -> Bool{
     var isOk = true
     switch self.currentLayout {
@@ -163,9 +151,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     return isOk
   }
-  
-//Alerte message if checklayout is not ok
-  
+    /// Alerte message if checklayout is not ok
     private func isAllImageSet() -> Bool{
       if !self.checkLayoutIsOk() {
       
